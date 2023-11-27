@@ -1,0 +1,41 @@
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+span{
+    color: red;
+}
+.kotak{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    padding: 20px;
+    background: black;
+    border-radius: 25px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+input{
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+button{
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    background: black;
+    display: block;
+    margin-top: 10%;
+    cursor: pointer;
+}
