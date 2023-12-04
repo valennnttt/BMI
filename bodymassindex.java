@@ -6,36 +6,36 @@ package bmi.bmiproject;
 import java.util.Scanner;
 /**
  *
- * @author ABASBOY
+ * @author VALENT
  */
-public class bodymassindex {
+public class BMIKALKULATOR {
  
     public static void main(String[] args) throws Exception {
-        bodymassindex();
+        BMIKALKULATOR();
     }
-    private static void bodymassindex() throws Exception {
-        System.out.print("Masukkan Berat Badan : ");
+    private static void BMIKALKULATOR() throws Exception {
+        System.out.print("MASUKKAN BERAT BADAN KG : ");
         Scanner s = new Scanner(System.in);
         float berat = s.nextFloat();
-        System.out.print("Masukkan Tinggi Badan : ");
+        System.out.print("MASUKAN TINGGI BADAN CM : ");
         float tinggi = s.nextFloat();
          
         float bmi = (100*100*berat)/(tinggi*tinggi);
          
         System.out.println("Hasil: "+bmi);
-        bmi(bmi);
+        bmicode(bmi);
          
     }
 
-    private static void bmi(float bmi) {
+    private static void bmicode(float bmi) {
         if(bmi < 18.5) {
-            System.out.println("kekurangan berat badan");
+            System.out.println("BERAT BADAN ANDA KURANG");
         }else if (bmi < 25) {
-            System.out.println("Normal");
+            System.out.println("NORMAL");
         }else if (bmi < 30) {
-            System.out.println("kelebihan berat badan");
+            System.out.println("BERAT BADAN ANDA LEBIH");
         }else {
-            System.out.println("mengalami obesitas");
+            System.out.println("OBESITAS");
         }
     }
 }
